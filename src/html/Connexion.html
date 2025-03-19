@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
 </head>
 <body>
-    <p>Veuillez Saisir vos information pour vous Connecté</p>
+    <div id="video-container">
+        <video autoplay loop muted>
+            <source src="../image/FPV_Drone.mp4" type="video/mp4">
+        </video>
+    </div>   
+    <p>Veuillez Saisir vos information</p>
     <form action="">
 
         <label for =  "email"></label>
@@ -15,10 +20,12 @@
         <label for="password"></label>
         <input type = "password" name = "password" placeholder=" Votre Mot de Passe"><br>
 
-        <input type="checkbox" name = "checkbox">
-        <label for="checkbox">Remember Me</label>
+        <a id ="passe" href="#">Mot de passe oublié ? </a>
 
-        <input type="valide" value="Connexion">
+        <input type="checkbox" name = "checkbox">
+        <label for="checkbox">Remember Me</label><br>
+
+        <input type="submit" value="Connexion">
     </form>
 </body>
 </html>

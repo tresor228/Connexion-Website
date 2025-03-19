@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,33 @@
     <h2>Veuillez Vous renseigner</h2>
     <form>
         <label for = "text"></label>
-        <input type ="text" name = "nom" placeholder="Votre Nom">
+        <input type ="text" name = "nom" placeholder="Nom"><br>
 
         <label for = "text"></label>
-        <input type ="text" name = "prenom" placeholder="Votre Prenom">
+        <input type ="text" name = "prenom" placeholder="Prenom"><br>
+
+        <label for="country"></label>
+        <select for = "country" name = "country" >
+            <option value=" ">Choisissez Votre Pays</option>
+            <option value="tg">TOGO</option>
+            <option value="bn">BENIN</option>
+            <option value="cm">CAMEROUN</option>
+            <option value="gb">GABON</option>
+            <option value="ci">COTE D'IVOIRE</option>
+            <option value="tg">MAROC</option>
+            <option value="fr">FRANCE</option>
+            <option value="bf">BURKINA</option>
+            <option value="us">USA</option>
+            <option value="ca">CANADA</option>
+        </select><br>
+
+        <label for = "phone"></label>
+        <input type="tel" name = "phone" placeholder="Numero de Téléphone"><br>
 
         <label for ="email"></label>
-        <input type = "email" name = "email" placeholder="Votre Adresse Mail">
+        <input type = "email" name = "email" placeholder="Adresse Mail"><br>
+
+        <input type="submit" value="Inscription">
     </form>
 </body>
 </html>
