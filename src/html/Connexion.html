@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Connexion</title>
 </head>
 <body>
     <div id="video-container">
         <video autoplay loop muted>
             <source src="../image/FPV_Drone.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
         </video>
-    </div>   
-    <p>Veuillez Saisir vos information</p>
-    <form action="">
+    </div>  
 
-        <label for =  "email"></label>
-        <input type = "email" name = "email" placeholder="Votre Adresse email"><br>
+    <div class="container">
+        <p>Veuillez saisir vos informations</p>
+        <form action="">
 
-        <label for="password"></label>
-        <input type = "password" name = "password" placeholder=" Votre Mot de Passe"><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre Adresse email"><br>
 
-        <a id ="passe" href="#">Mot de passe oublié ? </a>
+            <label for="password">Mot de Passe :</label>
+            <input type="password" id="password" name="password" placeholder="Votre Mot de Passe"><br>
 
-        <input type="checkbox" name = "checkbox">
-        <label for="checkbox">Remember Me</label><br>
+            <a id="passe" href="#">Mot de passe oublié ?</a><br>
 
-        <input type="submit" value="Connexion">
-    </form>
-    <script href = "../js/connexion.js"></script>
+            <input type="checkbox" id="remember" name="checkbox">
+            <label for="remember">Remember Me</label>
+            <input id="submit" type="submit" value="Connexion">
+            <p>New Account ? <a href="inscription.html">Sign Up</a></p>
+        </form>
+    </div> 
+    
+    <script src="../js/connexion.js"></script>
 </body>
 </html>

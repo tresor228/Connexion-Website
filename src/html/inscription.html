@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
+    <link rel="stylesheet" href="../style/style.css">
+   <title>Inscription</title>
 </head>
 <body>
     <div id="video-container">
         <video autoplay loop muted>
             <source src="../image/FPV_Drone.mp4" type="video/mp4">
         </video>
+    </div>
+    <div class = "container">
+
+        <h2>Veuillez Vous renseigner</h2>
+        <form>
+            <label for = "text"></label>
+            <input type ="text" name = "nom" placeholder="Nom" required><br>
+
+            <label for = "text"></label>
+            <input type ="text" name = "prenom" placeholder="Prenom" required><br>
+
+            <label for="country"></label>
+            <select id ="country" for = "country" name = "country"  onchange="telephone()">
+                <option value=" ">Choisissez Votre Pays</option>
+                <option value="+228">TOGO </option>
+                <option value="+229" >BENIN </option>
+                <option value="+237">CAMEROUN </option>
+                <option value="+241">GABON </option>
+                <option value="+225">COTE D'IVOIRE </option>
+                <option value="+212">MAROC </option>
+                <option value="+33">FRANCE </option>
+                <option value="+227">BURKINA </option>
+                <option value="+1">USA </option>
+                <option value="+49">ALLEMAGNE </option>
+            </select><br>
+            <label for ="email"></label>
+            <input type = "email" name = "email" placeholder="Adresse Mail" required><br>
+
+            <input id="submit" type="submit" value="Inscription">
+        </form>
     </div>  
-    <h2>Veuillez Vous renseigner</h2>
-    <form>
-        <label for = "text"></label>
-        <input type ="text" name = "nom" placeholder="Nom" required><br>
-
-        <label for = "text"></label>
-        <input type ="text" name = "prenom" placeholder="Prenom" required><br>
-
-        <label for="country"></label>
-        <select for = "country" name = "country" required>
-            <option value=" ">Choisissez Votre Pays</option>
-            <option value="tg">TOGO</option>
-            <option value="bn">BENIN</option>
-            <option value="cm">CAMEROUN</option>
-            <option value="gb">GABON</option>
-            <option value="ci">COTE D'IVOIRE</option>
-            <option value="tg">MAROC</option>
-            <option value="fr">FRANCE</option>
-            <option value="bf">BURKINA</option>
-            <option value="us">USA</option>
-            <option value="ca">CANADA</option>
-        </select><br>
-
-        <label for = "phone"></label>
-        <input type="tel" name = "phone" placeholder="Numero de Téléphone" required><br>
-
-        <label for ="email"></label>
-        <input type = "email" name = "email" placeholder="Adresse Mail" required><br>
-
-        <input type="submit" value="Inscription">
-    </form>
     <script href = "../js/inscription.js"></script>
 </body>
 </html>
