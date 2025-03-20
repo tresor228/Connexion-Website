@@ -3,13 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#homepage {
     text-align: center;
     overflow: hidden;
     min-height: 100vh;
     display: flex;
+    color: #fff;
     align-items: center;
     justify-content: center;
     background-image: url(/src/image/binaire.jpg);
@@ -29,8 +32,8 @@ form select {
     position: fixed;
     top: 0;
     left: 0;
-    margin: auto;
-    padding: 0 0 0 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     object-fit: cover;
 }
@@ -86,9 +89,10 @@ button{
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 30px;
 }
 button:hover{
     background-color: #218838;
