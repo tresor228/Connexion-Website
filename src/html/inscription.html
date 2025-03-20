@@ -6,16 +6,21 @@
     <title>Inscription</title>
 </head>
 <body>
+    <div id="video-container">
+        <video autoplay loop muted>
+            <source src="../image/FPV_Drone.mp4" type="video/mp4">
+        </video>
+    </div>  
     <h2>Veuillez Vous renseigner</h2>
     <form>
         <label for = "text"></label>
-        <input type ="text" name = "nom" placeholder="Nom"><br>
+        <input type ="text" name = "nom" placeholder="Nom" required><br>
 
         <label for = "text"></label>
-        <input type ="text" name = "prenom" placeholder="Prenom"><br>
+        <input type ="text" name = "prenom" placeholder="Prenom" required><br>
 
         <label for="country"></label>
-        <select for = "country" name = "country" >
+        <select for = "country" name = "country" required>
             <option value=" ">Choisissez Votre Pays</option>
             <option value="tg">TOGO</option>
             <option value="bn">BENIN</option>
@@ -30,12 +35,13 @@
         </select><br>
 
         <label for = "phone"></label>
-        <input type="tel" name = "phone" placeholder="Numero de Téléphone"><br>
+        <input type="tel" name = "phone" placeholder="Numero de Téléphone" required><br>
 
         <label for ="email"></label>
-        <input type = "email" name = "email" placeholder="Adresse Mail"><br>
+        <input type = "email" name = "email" placeholder="Adresse Mail" required><br>
 
         <input type="submit" value="Inscription">
     </form>
+    <script href = "../js/inscription.js"></script>
 </body>
 </html>
