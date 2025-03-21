@@ -3,9 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 body{
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 #homepage {
     text-align: center;
@@ -38,18 +54,6 @@ form select {
     object-fit: cover;
 }
 
-.video-container video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-}
-
 .container {
     position: absolute;
     top: 50%;
@@ -72,16 +76,13 @@ form select {
     width: 100%;
     max-width: 300px;
 }
-
 #submit:hover {
     background-color: #218838;
 }
-
 #passe {
     color: black;
     text-decoration: none;
 }
-
 #passe:hover {
     text-decoration: underline;
 }
