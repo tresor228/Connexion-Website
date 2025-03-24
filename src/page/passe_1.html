@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = " stylesheet" href = "../style/style.css">
     <title>Mot de Passe oublié</title>
 </head>
 <body>
-    <form action="">
-        <label for = "email"></label>
-        <input type="email" name = "email" placeholder="Adresse Mail" ><br>
-
-        <input id="passe1" type ="submit" value="Suivant" >
-    </form>
+    <div id="video-container">
+        <video autoplay loop muted>
+            <source src="../image/FPV_Drone.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>  
+    <div class ="container">
+        <form action="">
+            <label for = "email"></label>
+            <input type="email" name = "email" placeholder="Adresse Mail" required ><br>
+    
+            <input id="passe1" type ="submit" value="Suivant" onclick="Reponse('Suivant')" >
+        </form>
+    </div>
+    <script src = "../js/inscription.js"></script>
 </body>
 </html>

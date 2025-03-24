@@ -11,6 +11,14 @@ html, body {
 body{
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: opacity 1s ease-out;
+}
+.fade-out {
+    opacity: 0;
+}
+h2{
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 video {
     min-width: 100%;
@@ -76,7 +84,20 @@ form select {
     width: 100%;
     max-width: 300px;
 }
+#passe1 {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
 #submit:hover {
+    background-color: #218838;
+}
+#passe1:hover {
     background-color: #218838;
 }
 #passe {

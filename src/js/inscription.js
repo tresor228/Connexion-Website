@@ -1,12 +1,10 @@
-function telephone(){
-    var countrySelect = document.getElementById("country");
-    var telPhone = document.getElementById("tel");
+document.getElementById("submit").addEventListener("click", function (event) {
+    event.preventDefault(); 
 
-    let selection  = countrySelect.value;
+    document.body.classList.add("fade-out");
 
-    if (selection){
-        telPhone.value = selection + ' ';
-    }else{
-        telPhone.value = ' ';
-    }
-}
+   
+    setTimeout(function () {
+        window.location.href = "../page/passe_2.html";
+    }, 1000);
+});

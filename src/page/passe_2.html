@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mot de Passe</title>
+    <link rel =" stylesheet" href = "../style/style.css">
+    <title>Mot de Passe Recupération</title>
 </head>
 <body>
+    <div id="video-container">
+        <video autoplay loop muted>
+            <source src="../image/FPV_Drone.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
     <form action="">
         <label for="password"></label>
         <input type="password" name =" password" placeholder="Mot de Passe"><br>
@@ -13,7 +20,8 @@
         <label for="password"></label>
         <input type="password" name =" password" placeholder="Confirmer Mot de Passe"><br>
 
-        <input type = "submit" value="Connexion" id = "passe2">
+        <input type = "submit" value="Connexion" id = "passe2" oneclick = "Reponse('Connexion')">
+        <script src ="#"></script>
     </form>
 </body>
 </html>
