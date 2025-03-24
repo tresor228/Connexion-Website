@@ -1,10 +1,11 @@
-document.getElementById("submit").addEventListener("click", function (event) {
-    event.preventDefault(); 
+function Mailretrun(){
+    var mail = document.getElementById('mail').value;
 
-    document.body.classList.add("fade-out");
-
-   
-    setTimeout(function () {
-        window.location.href = "../page/passe_2.html";
-    }, 1000);
-});
+    if (mail.trim() == ""){
+        alert("Veuillez saisir votre adresse mail");
+        return false;
+    }
+    else{
+        return true;
+    }
+}
