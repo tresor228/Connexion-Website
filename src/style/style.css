@@ -209,6 +209,11 @@ button:hover{
         margin: 0;
         box-sizing: border-box;
     }
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-height: 600px) {
@@ -220,5 +225,10 @@ button:hover{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
     }
 }
